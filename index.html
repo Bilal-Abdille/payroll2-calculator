@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payroll calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="payroll-logo.png" alt="">
+        <hr>
+        <h2>NET PAY CALCULATOR <br>
+            <span style="font-size: small;">Enter the gross salary below amount to calculate your net amount.</span>
+        </h2>
+        <div class="second">
+            <form id="myform">
+                <label for="basic_salary">Basic salary</label>
+                <input type="number" id="basic_salary">
+                <label for="benefits">Benefits</label>
+                <input type="number" id="benefits">
+                <input type="submit" value="calculate" class="calc">
+            </form>
+            <br>
+
+            <table id="mytable" border="">
+                <thead>
+                    <tr>
+                        <th>Describtion</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gross salary </td>
+                        <td id="gross_salary"></td>
+                    </tr>
+                    <tr>
+                        <td>NSSF</td>
+                        <td id="nssf"></td>
+                    </tr>
+                    <td>NHIF</td>
+                    <td id="nhif"></td>
+                    </tr>
+                    <td>NHDF</td>
+                    <td id="nhdf"></td>
+                    </tr>
+                    <td>Payee</td>
+                    <td id="payee"></td>
+                    </tr>
+                    <td>Taxableincome</td>
+                    <td id="taxableincome"></td>
+                    </tr>
+                    <td>Net salary</td>
+                    <td id="netsalary"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
